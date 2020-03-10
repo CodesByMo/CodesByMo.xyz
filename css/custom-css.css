@@ -1,0 +1,147 @@
+/* Large Layout: 1440px */
+/* Medium Layout: 1280px */
+/* S-Medium Layout: 1024px */
+/* Tablet Layout: 768px */
+/* Mobile Layout: 320px */
+/* Wide Mobile Layout: 480px */
+.section_gap_top {
+  padding-top: 100px;
+}
+
+.section_gap {
+  padding: 100px 0;
+}
+
+.footer_area::before {
+  background: url("../img/body-bg.png");
+}
+
+.fa::before {
+  color: #fff;
+}
+
+.footer_social {
+  color: #fff;
+  position: fixed;
+  bottom: 5px;
+  background: rgb(87, 82, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(87, 82, 217, 1) 0%,
+    rgba(117, 82, 242, 1) 100%
+  );
+  padding: 15px;
+  border-radius: 35px;
+  z-index: 2;
+}
+
+.extra_height::before {
+  display: none;
+  background: url("../img/body-bg.png");
+  height: 125px;
+}
+
+/* ==========-MEDIA QUERIES-=================  */
+
+/* desktop  */
+@media only screen and (min-width: 960px) {
+  .footer_social {
+    position: fixed;
+    bottom: 5px;
+    padding: 15px;
+    border-radius: 25px;
+  }
+}
+
+/* 1440p  */
+@media (max-width: 1440px) {
+  /* .footer_social {
+    position: fixed;
+    bottom: 5px;
+    padding: 15px;
+    border-radius: 25px;
+  }
+  .extra_height {
+    display: block;
+    height: 70px;
+  } */
+}
+/* end desktop  */
+/* =============================== */
+/* midsizes  */
+@media only screen and (max-width: 960px) {
+  .home_banner_area .banner_inner .banner_content {
+    margin-top: 0px;
+  }
+  .footer_social {
+    position: fixed;
+    bottom: 5px;
+    padding: 15px;
+    border-radius: 25px;
+  }
+  .footer_area {
+    margin-top: 25px;
+    line-height: 0px;
+    background-color: white;
+  }
+  .extra_height {
+    display: block;
+    height: 70px;
+  }
+}
+/* end midsizes  */
+
+/* =============================== */
+
+/* mobile  */
+@media only screen and (max-width: 600px) {
+  .footer_social {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    background: rgb(87, 82, 217);
+    background: linear-gradient(
+      90deg,
+      rgba(87, 82, 217, 1) 0%,
+      rgba(117, 82, 242, 1) 100%
+    );
+    padding: 15px;
+    border-radius: 35px;
+  }
+  .footer_area {
+    margin-top: 25px;
+    line-height: 0px;
+    background-color: white;
+  }
+  .footer_area,
+  #footerLinks {
+    padding: 0 5px !important;
+  }
+
+  .footer_area .footer_social a {
+    padding: 0 15px;
+  }
+  .extra_height::before {
+    display: block;
+    background: url("../img/body-bg.png");
+  }
+
+  .extra_height {
+    display: block;
+    height: 95px;
+  }
+
+  .home_banner_area .banner_inner {
+    padding-top: 85px;
+  }
+  .banner_content h1,
+  h3,
+  h5 {
+    text-align: center;
+  }
+}
+
+/* .subscription_box .subscription input {
+  min-width: 360px;
+} */
+/* end mobile  */
